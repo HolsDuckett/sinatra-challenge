@@ -1,11 +1,12 @@
 <% if @name %>
 <h1> My name is <%= @name%> </h1>
 <% end %>
+
 <div> <img style = 'border: 5px dashed pink' src='https://icatcare.org/app/uploads/2018/07/Thinking-of-getting-a-cat.png' alt='cute cat'> </div>
 
 <% if @name.nil? %>
-<form action= '/named-cat'>
-<input type='text' name='name'>
-<input type='submit'value='Submit'>
-</form>
+  <form action = "/named-cat">
+    <input type = "text" name = "name">
+    <input type = "submit" value = "Submit">
+  </form>
 <% end %>
